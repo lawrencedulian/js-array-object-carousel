@@ -25,10 +25,11 @@ img {
     width: 750px;
 }
 
-.item h2 {
+.item-txt {
     position: absolute;
     right: 0;
     color: white;
+    text-align: end;
     padding: 1em;
 }
 
@@ -43,7 +44,8 @@ img {
 }
 
 #thumbs {
-    display: flex; 
+    display: flex;
+    background: #000;
     position: relative;
 }
 
@@ -55,6 +57,7 @@ img {
     width: 150px;
     height: 100px;
     object-fit: cover;
+    
 }
 
 .item-active {
@@ -62,6 +65,7 @@ img {
 }
 
 .thumb-active {
+    border: 2px solid white;
     opacity: 1;
 }
 
@@ -69,8 +73,7 @@ button {
     width: 30px;
     height: 30px;
     border-radius: 50px;
-    background-color: rgba(0, 0, 0, .2);
-
+    z-index: 999;
     border: none;
 }
 
@@ -78,7 +81,7 @@ button a {
     color: black;
 }
 
-#btn-1 {
+#btn-prev {
     margin: .2em;
 
     position: absolute;
@@ -86,7 +89,7 @@ button a {
     transform: translateY(-50%);
 }
 
-#btn-2 {
+#btn-next {
     margin: .2em;
 
     position: absolute;
